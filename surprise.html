@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Hari Raya</title>
+    <style>
+        /* Setting background image related to Hari Raya */
+        body {
+            background-image: url('https://img.freepik.com/free-vector/ramadan-card-vector_43623-1049.jpg?semt=ais_hybrid'); /* Gantikan dengan URL gambar latar belakang */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        /* Styling the large "Selamat Hari Raya" text */
+        h1 {
+            font-size: 80px;
+            color: #006400; /* Dark green color */
+            font-family: 'Brush Script MT', cursive;
+            margin-top: 100px;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Adding Ketupat image below the "Selamat Hari Raya" text and making it rotate horizontally */
+        .ketupat {
+            margin-top: 30px;
+            animation: rotateKetupat 5s infinite linear; /* Animation for rotating the ketupat horizontally */
+        }
+
+        /* Keyframes for rotating ketupat horizontally */
+        @keyframes rotateKetupat {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        /* Styling the "Click below for the surprise" text */
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        /* Styling the Surprise button */
+        .box {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .box:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Hari Raya</h1>
+    
+    <!-- Image of Ketupat with rotating effect horizontally -->
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEhISExMTExUXFhYZGRgYExcRFxkQFhUXFhYWFxYYHiggGBolGxcXITEjJSkrLjowFx80ODMsOCotLysBCgoKDg0OGxAQGyslICUtLS0tKzUrLS0vMS0tLS0tLTUrNS0tLSstLTUtLS0tLS8tLS0vMC8tLy8vLTcrLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwcCAf/EAEAQAAIBAgMFBQYFAwMCBwEAAAECAAMRBBIhBTFBUWETIjJxgQZCUmKRoSNygrHBFDOSU9HwFbJDY4OUorPDB//EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBv/EACcRAQEAAgICAQMDBQAAAAAAAAABAhEDIRIxQSJR8BMycUKBkeHx/9oADAMBAAIRAxEAPwD1yIiedcpERAREQEREBERARIGL2xQpkqXBYb1QGq481QEj1kNtvk+GhUPVmRB/3FvtFsnsktXcSg/65X/0Kf8A7hr/AP1SVs/bHaOKb0zTYgle8HVrWuARY3F72IGl+RtEyl9VPjVrESJtHHpQTM1ySbKo1Z34Ko56HoACTYCWQlxMydpYs65qC3900nqWHLOKi5j1sPKdk21XXxUqbjmlQo3oji3/AMpT9TD7reNaCJV4fb1FiAxNJjwqDJcncA/gY9ATLSXVIiJAREQEREBERAREQEREBERAREQERED8mTrY98VmuzU6YNuyBKPcf6xHeU/ILCx1zXmtlbtXZK1u+p7OqBo4F7j4XX306b9dCDIyls1LpONm+1NRpKgCqoVRuAAUD0E+5ypVDdkdclRbZlvffuZT7yGxsehBsQQOs4MpZdVsThi8wAdBd6ZDqOJK71/UuZf1TvEY3V3BfvjqYpdsW/Dyh82+6EXBHO+lh1mbzNVc1qgsxFlXf2dM65BwzGwLHiQBuAkXC1zUC4cg5MO7X0sGbNmoKOYRCp88vKT50c/J/TFMcdEROdesEBZjYf8ANBOZo/MRURVYuQEAOYtuy8b3k72YwlVbv3qdEjuUWvcfPY/2gR/4Y9QDcSF7P4A4plxNUfhKb0U4MRuqtzHw/wCXwzWTt4sLjO2WWWyIiaKEREBERAREQEREBERAREQEREBERAREQKzbWze2UOlhVS+QnQEHxU2PwtYeRAPCUuHrB1DC43gg7wwJDKeRBBB8prZnNsYbsqwqDwVtG6V1XRv1KLeaLzmXNh5Y7+YvhfhyiInG1VuGOXE1l+JUceYurfbJLKVOIbLjKJ+JGT6gv/8AnLaWy+ER8VKgUEnQCVmBwzY+vlNxSSxf8p8NO/Nra9Ad1xI22MaWOVQWAIAA3tUJyqB5kgDzm22FswYaitPQse87D3qp8R8twHQCbcGG75VTPJYKABYaAemk/YidLMiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgJD2tg+2pPTBsxF1PKopzI3owB9JMiSMlhq2dFe1rgGx3g8VPUHT0nWQsfjaeGrVqTEg5y6qqM5KVLOTZQdM5cSHW9oE91KpPM0aoH0yzhz47MrJG3lHxtapavRPJ6Y/zfJ+zyw2niciab20H8mZjF4stdstQtmVv7NXerBh7vSdcTtHOcz5x1am6KB5soAk+GWp0r5ReeyGB7Wuah8NEXHWs4IH+K3P6lM3UpfZHC9nhaZIs1T8U8D39VB6hMq/pl1OvHHxmlLeyIiSgiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIGK9qVtiyedCl9qlaVktvbAhcRTJIGalYX0vkck/8AePrKbt1+IfWc/L+5zcn7n3Ie2GtRqX+E/sTOzYpBxv6GQNoVe1GXge6Opbuj95TGbsVxnb1fCJlRByVR9ABO0/J+zsdZERICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiJW7exbU6VkNqlQ5EPIkG7/AKVBb0A4wM9tfDpjarM4uiEpT1t4Tao46ltPJBzlRivZxVBK94crsD++sv6NIIqqosFAAHQCwis+VSx4AmcWfLlbvbbxjG/9PRmRACCzqL5m3XzNx+ENJO0diilqoBPusbmzjdoTobyTsenmrg8EQt+pu4v27SXW0EBpvflf1G6Tc8prtExjU7PxYrUqdVdzoreWYXseokiZL2I2gBmwzHcS9PqjG7r5hjfyfpNbOyWWbjKkREBERAREQEREBERAREQEREBERAREQEREBESDtfaaYannbUk2VRvd+Cj9yeABMlD92ntFaCgkFmbREHiYjf5AcSdBMttHZ4xeuJs7e6B4afRAd/C5Ya8dLAcMNVqmt29Zrq9kc8E17mQcEBNj5hjuM0v9EvX6zPKZ39nr7tOPVm2EqbMp02CVKNK58LCkoV+m7ut09RfW3Q4NLWAKj5WZPspEtduVMwakiioL2ZzfIjjgLG5cHkRYjeDpKzZ+HZmNN6zBt6nIlnTnu8Q4j1HTO+XzdMM8Pq1jXPC1amGYhQHFQqMzm2UgWVWPwknQ82tyk/FYfGVFN+xHJQ7EE8ATkFvvPursZiCO1BBFiGpBgQeYDCd9nM9O1GqwZgLq9iM6DgQSTmW4B11BB52ztlm5rf8AdvxzLWsmepCtcMpVKiMCPEjJUHPQjd5ggneDNhg/a1gqitQbN7zUmV1vzs5VgOgBPnKrbPY6XqBKoHdsM7EcmRdWT/gIlbhMQ9S4FF7rbMLoLX3EZmBsdbG3DoZrjnZjuTpln5y9dvR8Bj6ddM9Ngw3HeCDyZTqp6GSZ5zQqYii/a06VRW4+Aq6/C4ViSORGo4cQdxsjaS4lM4BVhoyMLMj2vlYfseI1muNmU3Ezeu4nRESUkREBERAREQEREBERAREQEREBERA5YnELSRnc5VUEk8gJi1ZsXVNeqMqjRVJ8FPfl5ZjYFj5DcBLTbbDFVDQP9mn4/mq2uBfkgIP5iu4rKCpWcfgt7lrHdnT3ah6niOYPSVyyk6/Pz7q8ksx2n4vHrYoqhgRY3HdynQi3ESsp7ZrOvYZyAtwam5npggZVbfmHhZgb6aWJ7v5SpGs3ZqSAPGw4A7lB+M/Ya8r2eN2eGpqqAIU/t8ACBbKflI0P13iZXmvzf9I48c7jaYTHIFCFQqgWAA7oHK3ASHtLBWsVJAvdGG9WG4g/8uLjnI1KpmF7EHUEHeGGhU9QZ3GJyKcxGTjc2A634Rc7esvbDyvysNm43tVINg66MOF+DD5TvHqN4M+to4TtkK3KtvVgSCr20NxY8SDbgTKR8PXINanenlU20HaVKd7kZW0XQXFxe/Lj+o5cBu1qsCLg9oy6Hotpn46u5XX+rrGeUfOEUAEBQhBIZbbqg8V+evHje/GdGUgh0OV13HgQd6tzU/7HeJHYdm4bMxDkK2Zi1n3I1zz8PqvKd+1uSqhnYbwovb8x3L6kS1l3uOXvy3iusBjBVXMNCDZlO9X4g/uDxBBnQlqbitT1cCxW9hUp7yh67yp4HoTelGFxNMmsqoCBqly5dN9jawDDUi1+IvrOlPalVgGHZEEXHiFwfWVk8b5Y12eck+vpvcJiVqotRDdWFxw8wRwIOhHMTtMZ7N7WdK5p1FVadU6WcsBiPIqMocDme8BxYzZzrl3Ns9y+iIiEkREBERAREQEREBERAREQE44tnCOUALhWKg7i9jlB9bTtEkY/AW7NLEkEBrnezN3ix6kkk+cge0eioV/vXPZ9R74b5LanqF42ljj8uFq1FY5abBqqHhlveqnmrG9uTgDcZRh2qMajCxbQL8FPgvnxPXoBOS43HO2/9/PlbkzkxW2yVQUl7Mkg6knxF797Nya9wRwtbhJkoMNiewcsf7beP5W3Cp5cG9DwN7yrUVFLMQFAuSdwA4zPOd7+63HnMsdxU7bpClfEDQadoOY3BwOLDQW3kcyAJ9bOwGbLVqDkUTeF4hm4M32HDXWRq1Y1mDsCFHgQ8PnYfEeXAHnefez8V2ByMfwie6f9Nj7p+QndyOm4i2netT3+fn53lMsLyLwzI0KopMUPhN2XjY376/Ug/qPKaXaGKFNT8R0A/mY7GHOwUEjJqSN+YiwUehufSU41+aS49p2LxCMrLvzAjlof5l5sCsHoJYKpXusFAUZ13kAbr6H1mRyONzA/mX+Vt+0n+z+0GpVXV1ARgpZg1wr3KqxuBoQLE8Mo4XM0uO8bIy4b41sJlMXX7Gs62urMxXhZ97r66t/lNDjsWKY+Y7h/J6TIY6pnOQHcQWbiDvAHzHj085nx+23LJce3XFVy4t4eII3hhqGB5g6iembB2h/U4elVNgxFmA3CopKuB0zA+lp5RkcbnB/Mv8rb9pvf/wCdZ/6epmFh2zZbG4ICoGtoNM4b1vOni+Yww66aqIiaNCIiAiIgIiICIiAiIgIiICIiBVe0eyBi6JTQOpD02Pu1V3eh3HoZgsPizqtQFGBKkHgwNiD1v6T1KZH202CXviaSkuB+IoFy6AaMBxdRw3kC2pAErnj5RTPHcUsiIzlaYa/YX/CPMjwhuajXJzt0Umvosahyqe572twb6hB5jU9POXFbGu6lGylSLEZQNOlt059+Jx8d1e/b7kbEYpQCBZvuPXnK+pWcHI7Eg+Ftwbobe9++8cQPio9rAC7HcP5J4Ac48WX6dl1X42IqL3VvUJHdublFHnvUcBfp5fNF1HduQeTd1ieJsd+vGTcNQyDfdjvO65/gDgJ0qIGFmAI5EXH0MXOenRcLZ3UJ2ABJ0A1PlOuFq5UOnefU33AWsFtxsPuTIYpo7XTwKeDEhnHy3tYH7+WvYkk5V38TwUcz15CWs11GNx70+DiKgui3fQd7xFF3WIPi6eXG0UHTwqdRwPivzIOt/OT6FEILDzJ4k8Ses7UcC2JcUkRXY694XVV+N+Q+53DpEymV1I2uG53XLZeznxNUUUuOLta+SnuzeZ1AHE9AZ6jg8KlFEpoMqqAAN+g68T1kPYWxqWDpdnTA1N2awBZ+LG30A4CWU6McZjNRWTRERJWIiICIiAiIgIiICIiAiIgIiICIiBjvaH2bKlq2HW4JJekBrmOpemOZ3leO8a6HNI4IuNf9xvB5HpPVpUbW9nKGJJYgo5GtSmcjHS2vBj5gzPPimXfymZPOMZXXVLByeHADmx4fvIuHptTuVbMTa+bjbcA29R53+tzLjb2wGwOQBlqq5awAyVNBcsQTZuAJuNWGkqe24WfN8OUg/fS3Xd1lLjcfpimVy307jHAeJWXqO+Ptr9RP0HtuYp/Qv/sv7+W+dS2H2mCbEMTnaoiIgPdU/wBStIsx987zY93od8g46liUsrUyObqV1/Lmbun6/wAxeOY69b/lpLdduGMClrJo4tdhoFHIjcxtwP24/uHdqYtlVhxIJVieZBvc+onOmxAsKbgA29zf/l13zR7J9la9Z/xVahTG8nLnb5UAJA/MfQHhMxt6+Ge8toWyMPVxbmnTQra2Z2sUS/PKe81tQunoNZ6JsjZVPCpkS5vqzHVnb4mP8DQbhadsDgqdBFp01CKNwHM6kk7ySdSTqZImuOMx9LbpERJCIiAiIgIiICIiAiIgIiICIiAiIgIn5KxvaDC65ayVLaWp3rm/K1MEyRaSPjsYlFC9Q2A9SSdyqBqzHgBrKmvt120pUiPmqnKPMIpLHyOWQOzLN2lRjUfgToFB3hEGiD7niTM8uXHFaYWvxwaztVqqLkWVDZslMbl5ZjvYjjpqADKLaNNUqEDQaelxNDUcKCTuGsyO0qpe441DbyU+I+i3+05N3PLdaXqLb2exPaYXD0//ADK1Z+imrU7JTyJJzf8ApyftRQaTX4WI87yP7O0QtBSABmZ2NuOZ2yk/pyj0n7tyuFp2PHU/lXU/xL82fln0SajO16X4DsPe7b6qSv8AE9ZpvmAPMA/WeaY+jkwtIEWPZuWHzOM7fcmekYQdxPyr+wm/Fff8s8naIiaKkREBERAREQEREBERAREQEREBERAREQEp9qbHzFqlCyVDqQdKdQ/OB4W+ca8wwFpcRHvqkumLpbQUkq4NJ1NmR9CG8xoRyPGdnxSAXLL9b/tLH2n2J/UL2lMWrINOGdN5pt/B4HoSDgxXuDlV3Ki7KqFmUbu+B4OPituM5c+Gy/S1mSy2ptIMLDRB9/8AnKVtei1O9Rwc5S4TeVXWy/mNgT6Dhc2GzqVJbVqjrUbeiqcyr1HxN8x05W3nvsmgcVi0uNFIqN0VCMg9Xy+itIwx78f8lddnbQopSRAx7iqhGU3zKACDyOnGV2LZsTUVQjPc6qoBPYqbvoSOGn6hNrtz2ep4m7j8OrbRwN/IVF99fuOBE5ey+w2w4apVymq+ndJZVpjcqkgXudSbDgOE1nD9W99K+XTI7YxIxB7JQykkU7MpVg9UhBdTqN43z0sCRMTs2lUqU6rIC9Mkq24i4Isbbxrex4gHeJMmmGExmorbsiIlkEREBERAREQEREBERAREQEREBERAREQEREBPinTVb5QBckmwAux3k24nnPuJIze3fZhamapQtTqbyu6nUPUDwsfiHqDJns1sj+mpnNY1XsXI1At4UB+FR9yx4y4iR1vZsiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIH//2Q==" alt="Ketupat" class="ketupat" width="200">
+
+    <!-- Text for clicking -->
+    <p>Click below for the surprise</p>
+
+    <!-- Button to redirect to another page -->
+    <button class="box" onclick="window.location.href='https://www.instagram.com/p/DEjEzU_SB2q/?igsh=dmlxYnZyM3F3MGF4';">
+        Surprise
+    </button>
+</body>
+</html>
